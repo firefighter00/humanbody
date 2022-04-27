@@ -1,0 +1,21 @@
+[debug] [2022-04-27T04:01:51.072Z] ----------------------------------------------------------------------
+[debug] [2022-04-27T04:01:51.075Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2022-04-27T04:01:51.075Z] CLI Version:   10.7.1
+[debug] [2022-04-27T04:01:51.075Z] Platform:      darwin
+[debug] [2022-04-27T04:01:51.075Z] Node Version:  v14.16.0
+[debug] [2022-04-27T04:01:51.077Z] Time:          Wed Apr 27 2022 09:31:51 GMT+0530 (India Standard Time)
+[debug] [2022-04-27T04:01:51.077Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-27T04:01:51.156Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-27T04:01:51.156Z] > authorizing via signed-in user (yesh.adithya31@gmail.com)
+[debug] [2022-04-27T04:01:51.156Z] [iam] checking project esp32-7ca01 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-04-27T04:01:51.159Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/esp32-7ca01:testIamPermissions [none]
+[debug] [2022-04-27T04:01:51.159Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/esp32-7ca01:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-04-27T04:01:51.231Z] [iam] error while checking permissions, command may fail: FirebaseError: Failed to make request to https://cloudresourcemanager.googleapis.com/v1/projects/esp32-7ca01:testIamPermissions
+[debug] [2022-04-27T04:01:51.233Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/esp32-7ca01 [none]
+[debug] [2022-04-27T04:01:51.238Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/esp32-7ca01
+[debug] [2022-04-27T04:01:51.244Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/esp32-7ca01
+    at RetryOperation._fn (/usr/local/lib/node_modules/firebase-tools/lib/apiv2.js:240:31)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: Failed to get Firebase project esp32-7ca01. Please make sure the project exists and your account has permission to access it.
